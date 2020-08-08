@@ -116,7 +116,3 @@ namespace Week2Lesson4
         f
     }
 }
- 
- 
- 
- 
