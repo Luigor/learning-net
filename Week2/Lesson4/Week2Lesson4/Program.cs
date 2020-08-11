@@ -6,6 +6,7 @@ namespace Week2Lesson4
     {
         public static void Main(string[] args)
         {
+            Task1();
         }
 
         /*
@@ -15,7 +16,7 @@ namespace Week2Lesson4
          * b. Surname
          * c. Age
          * d. Gender ('m' or 'k')
-         * e. PESEL
+         * e. Personal id
          * f. Employee number (e.g. 2509324094)
          * Declare variables of the appropriate types that can hold this information
         */
@@ -25,7 +26,7 @@ namespace Week2Lesson4
             string lastName;
             byte age;
             Gender gender;
-            int pesel;
+            ulong personalId;
             uint id;
         }
 
@@ -90,7 +91,7 @@ namespace Week2Lesson4
             string email;
             double height;
             double weight;
-            int phone;
+            uint phone;
 
             Console.WriteLine("Set first name:");
             firstName = Console.ReadLine();
@@ -105,14 +106,14 @@ namespace Week2Lesson4
             Console.WriteLine("Set weight (kg):");
             Double.TryParse(Console.ReadLine(), out weight);
             Console.WriteLine("Set phone number:");
-            int.TryParse(Console.ReadLine(), out phone);
+            uint.TryParse(Console.ReadLine(), out phone);
         }
 
     }
 
     enum Gender
     {
-        m,
-        f
+        male,
+        female
     }
 }
